@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>My gg map - test</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Lớp không có tiêu đề</name>
+      <Placemark>
+        <name>666 Đ. 3 Tháng 2</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.66147,10.7647699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>268 Lý Thường Kiệt</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6587357,10.7731415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước Giải Khát Cẩm</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6768894,10.7800322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước : Bá Phúc</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6402157,10.7708033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước Cô Dung</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6470946,10.7593508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ĐẠI LÝ NƯỚC ĐÁ NGỌC THÀNH</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6726149,10.775764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại lý Bia-Nước Ngọt Diễm Linh</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.639807,10.7681142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước Uống Đóng Chai Tư Mỹ</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6409313,10.7519447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước Giải Khát Hùng Dũng</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6408815,10.7855157,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Nước Ngọt 47</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6611224,10.7594374,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại lý nước đá NHÂN HUYỀN</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6768702,10.7497847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Đại Lý Giao Nước Lavie - Nước Vĩnh Hảo - Nước Satori - Nước Aquafina Quận 3</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            106.6897873,10.7872359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
