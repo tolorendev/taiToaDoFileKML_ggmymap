@@ -16,17 +16,22 @@ namespaces = {
 # Extract data
 data = []
 for placemark in root.findall('.//kml:Placemark', namespaces):
-    name = placemark.find('kml:name', namespaces).text
-    coordinates = placemark.find('.//kml:coordinates', namespaces).text
-    data.append([name, coordinates.strip()])
+    name_tag = placemark.find('kml:name', namespaces)
+    coord_tag = placemark.find('.//kml:coordinates', namespaces)
+
+    if name_tag is not None and coord_tag is not None:
+        name = name_tag.text.strip()
+        coords = coord_tag.text.strip()
+
+        # Lấy longitude, latitude (bỏ qua altitude nếu có)
+        lon, lat, *_ = coords.split(",")
+        data.append([name, float(lon), float(lat)])
 
 # Create DataFrame
-df = pd.DataFrame(data, columns=['Store Name', 'Coordinates'])
+df = pd.DataFrame(data, columns=['Store Name', 'Longitude', 'Latitude'])
 
 # Save to Excel
-output_file_path = 'data/stores_coordinates_case_300.xlsx'
+output_file_path = "data/stores_coordinates_case_300.xlsx"
 df.to_excel(output_file_path, index=False)
 
-# import ace_tools as tools; tools.display_dataframe_to_user(name="Stores and Coordinates", dataframe=df)
-
-output_file_path
+print(f"File Excel đã được lưu tại: {output_file_path}")
